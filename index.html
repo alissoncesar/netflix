@@ -6,6 +6,7 @@
     <title>Netflix</title>
     <link rel="icon" href="netflix.png">
     <link rel="stylesheet" href="index.css">
+    <script src="meuScript.js"></script>
 </head>
 <body>
 
@@ -32,16 +33,22 @@
             </div>
             <button class="entrar" type="submit">Entrar</button>
             <p class="ou">OU</p>
-            <button class="codigo" type="submit">Usar um código de acesso</button><br>
-            <button type="submit">Esqueceu a senha?</button>
-            </div>
-            <div class="coluna">
-                <input id="nome" type="checkbox" />
-                <label for="lembrar">Lembre-se de mim</label>
-            </div>
-            <p>Novo por aqui?</p>
-            <a href="https://www.netflix.com/br/">Assine agora</a>
-            <p>Esta página é protegida pelo Google reCAPTCHA para <br>garantir que você não é um robô. <a href="">Saiba mais</a></p>
+            <div class="final-tela-preta">
+                <button class="codigo" type="submit">Usar um código de acesso</button><br>
+                <button class="esqueci" type="submit">Esqueceu a senha?</button>
+                <div class="lembre-se">
+                    <input id="nome" type="checkbox" />
+                    <label for="lembrar">Lembre-se de mim</label>
+                </div>
+                <div class="novo-por-aqui">
+                    <p>Novo por aqui?</p>
+                    <a href="https://www.netflix.com/br/">Assine agora</a>
+                </div>
+                <div class="saiba-mais">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para</p> 
+                    <p>garantir que você não é um robô.</p> 
+                    <a href="">Saiba mais</a></p>
+                </div>
         </fieldset>
     </form>
 </div>
