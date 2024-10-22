@@ -89,6 +89,7 @@ body{
         font-weight: 500;
         font-size: 16px;
         line-height: 16px;
+        cursor: pointer;
     }
     .ou{
         position: absolute;
@@ -115,7 +116,15 @@ body{
             font-weight: 500;
             font-size: 16px;
             line-height: 16px;
+            cursor: pointer;
+        }
 
+        .codigo:hover{
+            filter: brightness(70%);
+        }
+
+        .cod{
+            color: white;
         }
         .esqueci{
             position: absolute;
@@ -130,10 +139,52 @@ body{
             font-weight: 500;
             font-size: 16px;
             line-height: 16px;
+            cursor: pointer;
+        }
+        
+        .esqueci:hover{
+            text-decoration: underline;
+            color: gray;
         }
         .lembre-se{
             position: absolute;
             top: 70px;
+            left: 55px;
+            line-height: 24px;
+            color: white;
+            
+            .custom-checkbox {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                padding-left: 25px;
+              }
+              
+              .custom-checkbox input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                top: 1px; 
+                right: 160px;
+              }
+              
+              .custom-checkbox .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background: #fff;
+                border: 1px solid gray;
+                border-radius: 3px;
+                /* opacity: 0; */
+                background-color: black;
+              }
+              
+              .custom-checkbox input:checked + .checkmark {
+                background: white;
+              }
+              
             
         }
         .novo-por-aqui{
