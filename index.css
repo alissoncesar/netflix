@@ -23,6 +23,8 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -30,7 +32,7 @@ body{
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
     width: 450px;
-    height: 645px;
+    height: 745px;
     padding: 120px;
    border-radius: 10px;
    margin-top: 90px;
@@ -60,6 +62,12 @@ body{
         outline: 2px solid white;
         outline-offset: 2px;
     }
+
+   .nome::placeholder{
+        color: rgba(255, 255, 255, 0.7);
+        padding-left: 15px;
+   }
+    }
     .senha{
         width: 310px;
         height: 58px;
@@ -77,6 +85,12 @@ body{
         outline: 2px solid white;
         outline-offset: 2px;
     }
+
+    .senha::placeholder{
+        color: rgba(255, 255, 255, 0.7);
+        padding-left: 15px;
+    }
+
     .entrar{
         width: 310px;
         height: 40px;
@@ -84,13 +98,19 @@ body{
         top: 360px;
         left:602px;
         border-radius: 5px;
-        background-color: red;
+        background-color: rgb(198, 13, 13);
         color: white;
         font-weight: 500;
         font-size: 16px;
         line-height: 16px;
         cursor: pointer;
     }
+
+    .entrar:hover{
+        background-color: rgb(178, 7, 7);
+        transition: all 0.15s ease-in-out;
+    }
+
     .ou{
         position: absolute;
         top: 418px;
@@ -105,7 +125,7 @@ body{
         .codigo{
             position: absolute;
             top: -15px;
-            right: 17px;
+            right: -55px;
             background-color: rgba(99, 97, 97, 0.50);
             color: white;
             border-radius: 5px;
@@ -120,18 +140,16 @@ body{
         }
 
         .codigo:hover{
-            filter: brightness(70%);
+            background-color: rgba(73, 73, 73, 0.5);
+            transition: all 0.15s ease-in-out;
         }
-
-        .cod{
-            color: white;
         }
         .esqueci{
             position: absolute;
             top: 32px;
-            right: 17px;
+            right: -60px;
             background-color: rgba(99, 97, 97, 0);
-            color: white;
+            color: rgba(255, 255, 255, 0.7);
             border-radius: 5px;
             weight: 500px;
             width: 310px;
@@ -144,7 +162,7 @@ body{
         
         .esqueci:hover{
             text-decoration: underline;
-            color: gray;
+            color: rgb(169, 165, 165);
         }
         .lembre-se{
             position: absolute;
@@ -168,17 +186,23 @@ body{
                 right: 160px;
               }
               
-              .custom-checkbox .checkmark {
+              .checkmark {
                 position: absolute;
                 top: 0;
-                left: 0;
-                height: 20px;
-                width: 20px;
+                left: -8px;
+                height: 19px;
+                width: 19px;
                 background: #fff;
                 border: 1px solid gray;
-                border-radius: 3px;
+                border-radius: 2px;
                 /* opacity: 0; */
                 background-color: black;
+              }
+
+              .checkmark:hover{
+                border-color: white;
+                cursor: pointer;
+                transition: all 0.1s ease-in-out;
               }
               
               .custom-checkbox input:checked + .checkmark {
@@ -189,12 +213,23 @@ body{
         }
         .novo-por-aqui{
             position: absolute;
-            top: 100px;
+            top: 108px;
+            left: 47px;
             display: flex;
+            color: rgba(255, 255, 255, 0.7);
+            
+            .assine-agora{
+                color: white;
+                padding-left: 5px;
+            }
         }
         .saiba-mais{
             position: relative;
-            top: 100px;
+            top: 135px;
+            left: 47px;
+            font-weight: 400;
+            font-size: 13px;
+            color: rgb(140, 140, 140);
         }
 
     }
@@ -206,5 +241,90 @@ input{
 input::placeholder{
     color: gray;
 }
+
+.assine{
+    text-decoration: none;
+    color: white;
+}
+
+.assine:hover{
+    text-decoration: underline;
+}
+
+.saiba{
+    text-decoration: none;
+    color: rgb(0, 113, 235);
+    position: absolute;
+    top: 18px;
+    left: 195px;
+    
+}
+
+.saiba:hover{
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    height: 500px;
+    bottom: -500px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} */
+
+.duvidas{
+    position: absolute;
+    top: 267px;
+    left: 180px;
+    color: rgba(255, 255, 255, 0.7);
+
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+    }
+    /* .lista-final {
+        display: grid;
+        grid-template-areas:
+          "one two"
+          "one three"
+          "four three";
+        gap: 2px; 
+      }
+      
+      .item {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      
+      .one { grid-area: one; }
+      .two { grid-area: two; }
+      .three { grid-area: three; }
+      .four { grid-area: four; } */
+      .lista-final{
+        .item1{
+            position: absolute;
+            top: 199px;
+        }
+      }
+}
+
+
 
 
