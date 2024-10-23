@@ -318,12 +318,47 @@ footer {
       .three { grid-area: three; }
       .four { grid-area: four; } */
       .lista-final{
+        a{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
         .item1{
             position: absolute;
-            top: 199px;
+            top: 310px;
+            left: 180px;
+        }
+        .item2{
+            position: absolute;
+            top: 350px;
+            left: 180px;
+        }
+        .item3{
+            position: absolute;
+            top: 310px;
+            left: 460px;
+        }
+        .item4{
+            position: absolute;
+            top: 350px;
+            left: 460px;
+        }
+        .item5{
+            position: absolute;
+            top: 310px;
+            left: 760px;
+        }
+        .item6{
+            position: absolute;
+            top: 310px;
+            left: 1070px;
         }
       }
-}
+
+      select{
+        appearance: none;
+        background-image: url(seta.png);
+        background-position: right center;
+      }
 
 
 

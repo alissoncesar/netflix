@@ -1,11 +1,10 @@
 // meuScript.js
 
-const input = document.getElementById('meuInput');
+const selectButton = document.querySelector('.custom-select');
+const optionsList = document.querySelector('.options');
+const arrow = document.querySelector('.arrow');
 
-input.addEventListener('blur', () => {
-  if (!input.value) {
-    input.setCustomValidity('Este campo é obrigatório');
-  } else {
-    input.setCustomValidity('');
-  }
+selectButton.addEventListener('click', () => {
+  optionsList.classList.toggle('active');
+  arrow.classList.toggle('rotated');
 });
