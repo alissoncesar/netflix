@@ -354,12 +354,17 @@ footer {
         }
       }
 
-      select{
-        appearance: none;
-        background-image: url(seta.png);
-        background-position: right center;
+      .seta-4 {
+        border-top: 4px solid white;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin: 0 10px;
+        float: left;
+        position: absolute;
+        left: 777px;
+        top: 30px;
       }
 
-
+    
 
 
